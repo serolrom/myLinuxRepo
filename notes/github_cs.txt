@@ -1,4 +1,12 @@
-Create a repo:
+Quick summary when you are already set (search for more comlex things below)
+- git pull
+- git add .
+- git commit -m "comment for this commit"
+- git push
+
+---------- COMPLICATED STUFF FOLLOWS, SET UP, ETC ------------------------------------------------
+Create a repo locally - note I almost prefer to create the repo in GitHub and clone it later with:
+git clone git@github.com:user/repository.git -> better if you have already created an SSH key and stored it locally.
 
 Go to the folder where you store all your repos. 
 $ git init myrepo   -> This will create a folder named 'myrepo'
@@ -9,6 +17,7 @@ So nothing is really stored elsewhere other than the folder where the contents a
 Configuration of the git - NEEDED  for info on who is working on what
 $ git config --global user.name "name here"
 $ git config --global user.email "email here"
+(this will NOT be needed if you cloned the git as stated above)
 
 Saving changes
 $ git status  -> tells you what's up. Chances are something is not tracked.
@@ -25,12 +34,9 @@ $ git clone [URL]
 
 Pushing
 The repo must exists beforehand
-Create a personal access token: Github profile (top right),
-'developer settings' from left menu, 'Personal access tokens', Generate new token,
-give it a name, grant access, finally go below and push generate token.
-$ git remote add origin [URL]  -> This adds the URL to the repo config file
+$ git remote add origin [URL]  -> if you have NOT pulled it in the first place
 $ cat .git/config   -> we check here that the config points to the repo URL
-$ git push origin master   -> you are asked for username     xxxxxx@github.com
+$ git push origin [master/main]   -> you are asked for username (or NOT if you pulled as per the start of this document)
 
 
 
