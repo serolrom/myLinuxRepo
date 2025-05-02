@@ -1,0 +1,11 @@
+---
+title: "XXXXXXXXXX"
+layout: post
+---  
+
+MD Text here  
+
+{% highlight bash %}   
+Code here  
+$ sudo pacman whatever  
+{% endhighlight %}
